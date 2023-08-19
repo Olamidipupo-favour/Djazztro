@@ -1,48 +1,47 @@
 {
-    "name": "create-djazztro",
-    "type": "module",
-    "homepage": "https://bwc9876.github.io/Djazztro",
-    "version": "0.0.14",
-    "readme": "https://raw.githubusercontent.com/Bwc9876/Djazztro/main/README.md",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Bwc9876/djazztro.git",
-        "directory": "packages/create-djazztro"
-    },
-    "description": "Template used to create a new project with djazztro",
-    "exports": {
-        ".": "./index.js"
-    },
-    "bin": {
-        "create-djazztro": "./index.js"
-    },
-    "files": [
-        "dist",
-        "index.js",
-        "tsconfig.json",
-        "../../README.md"
-    ],
-    "scripts": {
-        "prepublish": "pnpm build",
-        "build": "tsc"
-    },
-    "keywords": [
-        "template",
-        "create",
-        "astro",
-        "withastro",
-        "django"
-    ],
-    "author": "Bwc9876 <bwc9876@gmail.com> (https://github.com/Bwc9876)",
-    "license": "MIT",
-    "devDependencies": {
-        "@types/inquirer": "^9.0.3",
-        "@types/node": "^18.11.17",
-        "typescript": "^4.9.4"
-    },
-    "dependencies": {
-        "inquirer": "^9.1.4",
-        "ora": "^6.1.2"
-    },
-    "node": ">=14.16"
+  "name": "create-djazztro",
+  "type": "module",
+  "homepage": "https://bwc9876.github.io/Djazztro",
+  "version": "0.0.14",
+  "readme": "https://raw.githubusercontent.com/Bwc9876/Djazztro/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bwc9876/djazztro.git",
+    "directory": "packages/create-djazztro"
+  },
+  "description": "Template used to create a new project with djazztro",
+  "exports": {
+    ".": "./index.js"
+  },
+  "bin": {
+    "create-djazztro": "./index.js"
+  },
+  "files": [
+    "dist",
+    "index.js",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "prepublish": "pnpm build",
+    "build": "node api.js && tsc"
+  },
+  "keywords": [
+    "template",
+    "create",
+    "astro",
+    "withastro",
+    "django"
+  ],
+  "author": "Bwc9876 <bwc9876@gmail.com> (https://github.com/Bwc9876)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.17",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.4",
+    "ora": "^6.1.2"
+  },
+  "node": ">=14.16"
 }
