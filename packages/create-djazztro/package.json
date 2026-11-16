@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "prepublish": "pnpm build",
-    "build": "node api.js && tsc"
+    "build": "node init && tsc"
   },
   "keywords": [
     "template",
